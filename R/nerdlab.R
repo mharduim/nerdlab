@@ -1,17 +1,15 @@
 #' @export
 nerd_dark <- function()  {
-  extrafont::loadfonts(device = "win")
   (ggdark::dark_theme_light() +
       ggplot2::theme(axis.title = element_blank(),
-            axis.text = element_text(size=10, face = "bold",color="white", family="Courier New"),
+            axis.text = element_text(size=10, face = "bold",color="white"),
             plot.title = element_text(face="bold", margin = margin(5,0,7,0),
-                                      size=14, family="Tahoma"),
-            plot.caption = element_text(hjust = 0, family="Courier New"),
+                                      size=20),
+            plot.caption = element_text(hjust = 0),
             plot.caption.position = "plot",
             plot.title.position = "plot",
             legend.position = "top",
-            legend.title = element_text(family="Britannic Bold",
-                                        color="#000000"),
+            legend.title = element_text(color="#000000"),
             panel.grid.minor = element_line("#9c9c9c"),
             panel.grid.major = element_line("#797979"),
             legend.key = element_rect(fill="#ffffff"),
@@ -23,7 +21,6 @@ nerd_dark <- function()  {
                                                  color = "black",
                                                  hjust = 1,
                                                  size = 11,
-                                                 family="Arial",
                                                  fill="#eeeeee",
                                                  padding = margin(2,2,2,2),
                                                  margin = margin(1,0,1,0)),
@@ -32,18 +29,17 @@ nerd_dark <- function()  {
 
 #' @export
 nerd_grey <- function() {
-  extrafont::loadfonts(device = "win")
   (ggplot2::theme_light()+
      ggplot2::theme(axis.title = element_blank(),
-          axis.text = element_text(size=10, face = "bold",color="black", family="Courier New"),
+          axis.text = element_text(size=10, face = "bold",color="black"),
           plot.title = element_text(face="bold", margin = margin(5,0,7,0),
-                                    size=14, family="Tahoma", color="black"),
-          plot.caption = element_text(hjust = 0, family="Courier New", color="black"),
+                                    size=20, color="black"),
+          plot.caption = element_text(hjust = 0, color="black"),
           plot.caption.position = "plot",
           plot.title.position = "plot",
           legend.position = "top",
           legend.key = element_rect(fill = "transparent"),
-          legend.title = element_text(family="Britannic Bold", color="black"),
+          legend.title = element_text(color="black"),
           legend.text = element_text(color="black"),
           panel.grid.major = element_line(colour = "#969798"),
           panel.grid.minor.x = element_line(colour = "#a06964"),
@@ -64,19 +60,18 @@ nerd_grey <- function() {
 
 #' @export
 nerd_gucci <- function() {
-  extrafont::loadfonts(device = "win")
   (ggplot2::theme_light() +
      ggplot2::theme(axis.title = element_blank(),
-           axis.text = element_text(size=10, face = "bold",color="black", family="Courier New"),
+           axis.text = element_text(size=10, face = "bold",color="black"),
            plot.title = element_text(face="bold", margin = margin(5,0,7,0),
-                                     size=14, family="Tahoma"),
-           plot.caption = element_text(hjust = 0, family="Courier New"),
+                                     size=20),
+           plot.caption = element_text(hjust = 0),
            plot.caption.position = "plot",
            plot.title.position = "plot",
            legend.position = "top",
            legend.background = element_blank(),
            legend.key = element_rect(fill = "transparent"),
-           legend.title = element_text(family="Britannic Bold"),
+           legend.title = element_text(color="black"),
            panel.background = element_rect(fill = "#e5dacd"),
            panel.grid.major = element_line(colour = "#969798"),
            panel.grid.minor = element_line(colour = "#a06964"),
